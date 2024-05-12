@@ -57,7 +57,7 @@ print(recv_auth)
 
 # Отправляем закодированные данные для аутентификации
 username = base64.b64encode(fr0m.encode())
-password = base64.b64encode("trzo sdan vkvv gvyk".encode())
+password = base64.b64encode("Пароль приложения Google 2SV".encode())
 clientSocketSSL.send(username + b'\r\n')
 recv_user = clientSocketSSL.recv(1024)
 print("first",recv_user)
